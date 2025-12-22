@@ -76,7 +76,7 @@ if [[ $? -ne 0 ]]; then
     exit 1
 fi
 
-StackName="CodeBuildForDeploy"
+StackName="minhnghia"
 
 # Deploy the CloudFormation stack
 aws cloudformation deploy \
