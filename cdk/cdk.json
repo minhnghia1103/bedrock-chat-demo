@@ -63,7 +63,7 @@
         "secretName": "googleOAuthCredentials"
       }
     ],
-    "userPoolDomainPrefix": "bedrock-chat-demo",
+    "userPoolDomainPrefix": "",
     "allowedSignUpEmailDomains": [],
     "autoJoinUserGroups": ["CreatingBotAllowed"],
     "selfSignUpEnabled": true,
