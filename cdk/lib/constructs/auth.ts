@@ -46,10 +46,10 @@ export class Auth extends Construct {
         requireDigits: true,
         minLength: 8,
       },
-      // // Disable id selfSignUpEnabled is given as false or if selfSignUpEnabled is true and idp is provided
-      // selfSignUpEnabled: props.selfSignUpEnabled && !props.idp.isExist(),
-      // Allow self sign-up when using identity providers (Google, etc.)
-      selfSignUpEnabled: props.selfSignUpEnabled,
+      // Disable id selfSignUpEnabled is given as false or if selfSignUpEnabled is true and idp is provided
+      selfSignUpEnabled: props.selfSignUpEnabled && !props.idp.isExist(),
+      // // Allow self sign-up when using identity providers (Google, etc.)
+      // selfSignUpEnabled: props.selfSignUpEnabled,
       signInAliases: {
         username: false,
         email: true,
